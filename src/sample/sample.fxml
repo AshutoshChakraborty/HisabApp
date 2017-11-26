@@ -1,8 +1,29 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="20.0" layoutY="20.0" prefHeight="359.0" prefWidth="557.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXTextField fx:id="username" labelFloat="true" layoutX="22.0" layoutY="28.0" prefHeight="50.0" prefWidth="502.0" promptText="Username" unFocusColor="#156bff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="password" labelFloat="true" layoutX="22.0" layoutY="130.0" prefHeight="50.0" prefWidth="502.0" promptText="Password" unFocusColor="#156bff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton id="login" layoutX="22.0" layoutY="255.0" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #2255bb;" text="OK" textFill="WHITE"  onAction="#login"/>
+            <JFXButton layoutX="355.0" layoutY="255.0" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #2255bb;" text="Cancel" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
